@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean package'
+                sh 'export PATH=$PATH:/opt/homebrew/Cellar/maven/3.9.9/bin && mvn clean package'
             }
         }
 
